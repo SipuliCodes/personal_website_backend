@@ -8,11 +8,12 @@
     "dev": "nodemon app.js",
     "start": "node app.js",
     "build:ui": "rm -rf dist && cd ../personal_website && npm run build && cp -r dist ../personal_website_backend",
-    "deploy:full": "npm run build:ui && git add . && git commit -m uibuild && git push"
+    "deploy:full": "npm run build:ui && git add . && git commit -m fixedweather && git push"
   },
   "author": "Sisu Vepsäläinen",
   "license": "MIT",
   "dependencies": {
+    "axios": "^1.6.7",
     "cors": "^2.8.5",
     "dotenv": "^16.4.1",
     "express": "^4.18.2",
