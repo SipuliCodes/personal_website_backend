@@ -6,6 +6,7 @@
   "scripts": {
     "test": "test",
     "dev": "nodemon app.js",
+    "start": "node app.js",
     "build:ui": "rm -rf dist && cd ../personal_website && npm run build && cp -r dist ../personal_website_backend",
     "deploy:full": "npm run build:ui && git add . && git commit -m uibuild && git push"
   },

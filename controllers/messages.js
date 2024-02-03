@@ -19,7 +19,6 @@ router.post('/messages', async (req, res) => {
 
   await message.save()
 
-  console.log(message)
   res.json(message).end()
 })
 
